@@ -16,7 +16,7 @@ class _NotesScreenState extends State<NotesScreen> with TickerProviderStateMixin
   List<Note> _notes = [];
   bool _isLoading = false;
   late AnimationController _fadeController;
-
+  bool _isOffline = false;
   @override
   void initState() {
     super.initState();
